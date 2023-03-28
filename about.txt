@@ -2,3 +2,5 @@
 Git - Кириллица.
 Смена настроек в GitBash под UTF-8. Не помогло.
 chcp.com 65001 - Перевод кодировки активной страницы.
+git config --global core.quotepath false
+export LANG='C.UTF-8'
