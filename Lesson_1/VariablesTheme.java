@@ -97,12 +97,43 @@ class VariablesTheme {
         System.out.println("\n5. Перестановка значений переменных.");
         int digit1 = 2;
         int digit2 = 5;
-        int digit3 = digit1;
+        int digit3 = digit1; // = 2
         System.out.println(" - использование третьей переменной:");
+        System.out.println("Исходная цифра 1: " + digit1);
+        System.out.println("Исходная цифра 2: " + digit2);
+        System.out.println("Третья переменная будет равна первой: " + digit3);
+        digit1 = digit2; // = 5
+        digit2 = digit3; // = 2
         System.out.println("Цифра 1: " + digit1);
         System.out.println("Цифра 2: " + digit2);
-        System.out.println("Третья переменная будет равна первой: " + digit3);
-        digit2 = digit1;
-        digit3 = digit2;
+        System.out.println(" - использование арифметических операций:");
+        System.out.println("Исходная цифра 1: " + digit1);
+        System.out.println("Исходная цифра 2: " + digit2);
+        System.out.println("Складываем значения в первую переменную.");
+        System.out.println("После вычитаем из суммы и приравниваем к переменным.");
+        digit1 = digit1 + digit2; // digit1 = 5 + 2 = 7
+        digit2 = digit1 - digit2; // digit2 = 7 - 2 = 5
+        digit1 = digit1 - digit2; // digit1 = 7 - 5 = 2
+        System.out.println("Цифра 1: " + digit1);
+        System.out.println("Цифра 2: " + digit2);
+        System.out.println(" - побитовая операция:");
+        System.out.println("Исходная цифра 1: " + digit1);
+        System.out.println("Исходная цифра 2: " + digit2);
+        digit1 = digit1 ^ digit2;
+        digit2 = digit2 ^ digit1;
+        digit1 = digit1 ^ digit2;
+        System.out.println("Цифра 1: " + digit1); // Ничего не понял,
+        System.out.println("Цифра 2: " + digit2); // Вышло с закрытыми глазами.
+
+        // Задача шестая. 
+        // - проинициализируйте переменные типа char символами, которым 
+        //      соответствуют коды: 35, 38, 64, 94, 95.
+        // - в решении нигде не должны использоваться явно коды символов,
+        //      только сами символы или переменные.
+        // - выведите на консоль в столбец попарно:
+        //      код символа;
+        //      соответствующий коду символ из ASCII-таблицы;
+        // - код символа берите из переменной, а не пишите его руками.
+        System.out.println("\n6. Вывод символов и их кодов:");
     }
 }
