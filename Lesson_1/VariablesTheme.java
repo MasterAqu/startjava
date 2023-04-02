@@ -215,7 +215,7 @@ class VariablesTheme {
         int wholeSeconds = 86399;
 
         int hours = wholeSeconds / 3600;
-        int minutes = (wholeSeconds % 3600) / 60; 
+        int minutes = (wholeSeconds % 3600) / 60;
         int seconds = wholeSeconds % 60;
 
         System.out.println(hours + ":" + minutes + ":" + seconds);
