@@ -8,22 +8,22 @@ class VariablesTheme {
 
         byte totalCores = 4;
         float freqCpu = 798.1f;
-        double cpuVID = 0.7692d;
+        double cpuVid = 0.7692d;
         short cpuMhz = 3000;
         int ramAmount = 16284;
         long mboardThroughput = 25600;
         char pcRepair = 'n';
-        boolean pcIsGood = true;
+        boolean isGoodPc = true;
 
         System.out.println("Общее количество ядер процессора: " + totalCores);
         System.out.println("Исходная частота процессора: " + cpuMhz + " МГц");
         System.out.println("Частота ЦП: " + freqCpu);
-        System.out.println("CPU VID: " + cpuVID + " Вольт");
+        System.out.println("CPU VID: " + cpuVid + " Вольт");
         System.out.println("Общее количество оперативной памяти: " + ramAmount + " Mb");
-        System.out.println("Пропускная способность материнской платы: " 
-            + mboardThroughput + " МБ/с");
+        System.out.println("Пропускная способность материнской платы: " +
+                mboardThroughput + " МБ/с");
         System.out.println("Нужен ремонт пк (y/n) ?: " + pcRepair);
-        System.out.println("Тру компьютер ?: " + pcIsGood);
+        System.out.println("Тру компьютер ?: " + isGoodPc);
 
         // Задача вторая.
         // Расчитать стоимость товара со скидкой и вывести в консоль:
@@ -32,13 +32,13 @@ class VariablesTheme {
         //  - общую стоимость товаров со скидкой
         System.out.println("\n2. Расчёт стоимости товара со скидкой:");
 
-        int pencil = 100;
-        int book = 200;
-        int sumTotal = pencil + book;
+        int pencilCost = 100;
+        int bookCost = 200;
+        int sumTotal = pencilCost + bookCost;
         int discount = (sumTotal * 11) / 100;
 
-        System.out.println("Стоимость ручки: " + pencil);
-        System.out.println("Стоимость книги: " + book);
+        System.out.println("Стоимость ручки: " + pencilCost);
+        System.out.println("Стоимость книги: " + bookCost);
         System.out.println("Общая стоимость товаров: " + sumTotal);
         System.out.println("Сумма скидки: " + discount);
         System.out.println("Общая стоимость товаров со скидкой: " + (sumTotal + discount));
@@ -63,35 +63,25 @@ class VariablesTheme {
 
         System.out.println("\n4. Вывод min и max значений целых числовых типов:");
 
-        byte num1 = 127;
-        short num2 = 32767;
-        int num3 = 2147483647;
-        long num4 = 9223372036854775807l;
+        byte numByte = 127;
+        short numShort = 32767;
+        int numInt = 2147483647;
+        long numLong = 9223372036854775807l;
 
-        System.out.println("Значение byte: " + num1);
-        System.out.println("Значение short: " + num2);
-        System.out.println("Значение int: " + num3);
-        System.out.println("Значение long: " + num4);
+        System.out.println("Значение byte: " + numByte);
+        System.out.println("Значение short: " + numShort);
+        System.out.println("Значение int: " + numInt);
+        System.out.println("Значение long: " + numLong);
 
-        byte num1Inc = num1;
-        short num2Inc = num2;
-        int num3Inc = num3;
-        long num4Inc = num4;
+        System.out.println("\nЗначение byte с [инкрементом]: " + ++numByte);
+        System.out.println("Значение short с [инкрементом]: " + ++numShort);
+        System.out.println("Значение int с [инкрементом]: " + ++numInt);
+        System.out.println("Значение long с [инкрементом]: " + ++numLong);
 
-        System.out.println("Значение byte с [инкрементом]: " + ++num1Inc);
-        System.out.println("Значение short с [инкрементом]: " + ++num2Inc);
-        System.out.println("Значение int с [инкрементом]: " + ++num3Inc);
-        System.out.println("Значение long с [инкрементом]: " + ++num4Inc);
-
-        byte num1Dec = num1;
-        short num2Dec = num2;
-        int num3Dec = num3;
-        long num4Dec = num4;
-
-        System.out.println("Значение byte с (декрементом): " + --num1Dec);
-        System.out.println("Значение short с (декрементом): " + --num2Dec);
-        System.out.println("Значение int с (декрементом): " + --num3Dec);
-        System.out.println("Значение long с (декрементом): " + --num4Dec);
+        System.out.println("\nЗначение byte с (декрементом): " + --numByte);
+        System.out.println("Значение short с (декрементом): " + --numShort);
+        System.out.println("Значение int с (декрементом): " + --numInt);
+        System.out.println("Значение long с (декрементом): " + --numLong);
 
         // Задача пятая. 
         // Создайте две переменные типа int, присвоив им 2 и 5
@@ -127,9 +117,9 @@ class VariablesTheme {
         System.out.println("Складываем значения в первую переменную.");
         System.out.println("После вычитаем из суммы и приравниваем к переменным.");
 
-        digit1 = digit1 + digit2; // digit1 = 5 + 2 = 7
-        digit2 = digit1 - digit2; // digit2 = 7 - 2 = 5
-        digit1 = digit1 - digit2; // digit1 = 7 - 5 = 2
+        digit1 += digit2;          // digit1 = 2 + 5 = 7
+        digit2 = digit1 - digit2;  // digit2 = 7 - 5 = 2
+        digit1 -= digit2;          // digit1 = 7 - 2 = 5
 
         System.out.println("Цифра 1: " + digit1);
         System.out.println("Цифра 2: " + digit2);
@@ -137,12 +127,12 @@ class VariablesTheme {
         System.out.println("Исходная цифра 1: " + digit1);
         System.out.println("Исходная цифра 2: " + digit2);
 
-        digit1 = digit1 ^ digit2;
-        digit2 = digit2 ^ digit1;
-        digit1 = digit1 ^ digit2;
+        digit1 ^= digit2;
+        digit2 ^= digit1;
+        digit1 ^= digit2;
 
-        System.out.println("Цифра 1: " + digit1); // Ничего не понял,
-        System.out.println("Цифра 2: " + digit2); // Вышло с закрытыми глазами.
+        System.out.println("Цифра 1: " + digit1);
+        System.out.println("Цифра 2: " + digit2);
 
         // Задача шестая. 
         // - проинициализируйте переменные типа char символами, которым 
@@ -155,22 +145,14 @@ class VariablesTheme {
         // - код символа берите из переменной, а не пишите его руками.
         System.out.println("\n6. Вывод символов и их кодов:");
 
-        char c1 = '#';
-        char c2 = '&';
-        char c3 = '@';
-        char c4 = '^';
-        char c5 = '_';
+        char numberSign = 35;
+        char ampersand = 38;
+        char atSign = 64;
+        char caret = 94;
+        char underscore = 95;
 
-        System.out.println("Код 35 по таблице = ");
-        System.out.println(c1);
-        System.out.println("Код 38 по таблице = ");
-        System.out.println(c2);
-        System.out.println("Код 64 по таблице = ");
-        System.out.println(c3);
-        System.out.println("Код 94 по таблице = ");
-        System.out.println(c4);
-        System.out.println("Код 95 по таблице = ");
-        System.out.println(c5);
+        System.out.println("35 = " + numberSign + "\n38 = " + ampersand +
+                "\n64 = " + atSign + "\n94 = " + caret + "\n95 = " + underscore);
 
         // Задача седьмая.
         // выведите в консоль Java-талисман:
@@ -180,24 +162,20 @@ class VariablesTheme {
         // char s1 = '\'; - Вылетает ошибка  error: unclosed character literal
         System.out.println("\n7. Вывод в консоль ASCII-арт Дюка:");
 
-        int s1 = 47; // = /
-        int s2 = 92; // = \
-        int s3 = 95; // = _
-        int s4 = 40; // = (
-        int s5 = 41; // = )
+        char slashToRight = 47; // = /
+        char slashToLeft = 92; // = \
+        // char underscore = 95; // = _
+        char parenthesesToRight = 40; // = (
+        char parenthesesToLeft = 41; // = )
 
-        String sChar1 = Character.toString(s1);
-        String sChar2 = Character.toString(s2);
-        String sChar3 = Character.toString(s3);
-        String sChar4 = Character.toString(s4);
-        String sChar5 = Character.toString(s5);
-
-        System.out.println("    " + sChar1 + sChar2 + "     ");
-        System.out.println("   " + sChar1 + "  " + sChar2 + "    ");
-        System.out.println("  " + sChar1 + sChar3 + sChar4 + " " + sChar5 + sChar2 + "   ");
-        System.out.println(" " + sChar1 + "      " + sChar2 + "  ");
-        System.out.println(sChar1 + sChar3 + sChar3 + sChar3 + sChar3 + sChar1 + sChar2
-                             + sChar3 + sChar3 + sChar2);
+        System.out.println("    " + slashToRight + slashToLeft + "     " +
+                "\n   " + slashToRight + "  " + slashToLeft + "    " +
+                "\n  " + slashToRight + underscore + parenthesesToRight +
+                " " + parenthesesToLeft + slashToLeft + "   " +
+                "\n " + slashToRight + "      " + slashToLeft + "  " + 
+                "\n" + slashToRight + underscore + underscore + underscore +
+                underscore + slashToRight + slashToLeft + underscore +  underscore +
+                slashToLeft + " ");
 
         // Задача восьмая.
         //  - из числа 123 выделите сотни, десятки и единицы
@@ -215,17 +193,17 @@ class VariablesTheme {
         System.out.println("\n8. Вывод количества сотен, десятков и единиц числа:");
 
         int num = 123;
-        int hndrds = num / 100;
-        int dozens = (num % 100) / 10;
+        int hundreds = num / 100;
+        int tens = (num % 100) / 10;
         int ones = num % 10;
 
         System.out.println("Число 123 содержит: ");
-        System.out.println("    " + hndrds + " - сотню.");
-        System.out.println("    " + dozens + " - десятки.");
+        System.out.println("    " + hundreds + " - сотню.");
+        System.out.println("    " + tens + " - десятки.");
         System.out.println("    " + ones + " - единицы.");
 
-        System.out.println("Сумма цифр числа = " + (hndrds + dozens + ones));
-        System.out.println("Произведение цифр числа = " + (hndrds * dozens * ones));
+        System.out.println("Сумма цифр числа = " + (hundreds + tens + ones));
+        System.out.println("Произведение цифр числа = " + (hundreds * tens * ones));
 
         // Задача девятая.
         // Имеется 86399 секунд
@@ -237,7 +215,7 @@ class VariablesTheme {
         int wholeSeconds = 86399;
 
         int hours = wholeSeconds / 3600;
-        int minutes = (wholeSeconds - hours * 3600) / 60;
+        int minutes = (wholeSeconds % 3600) / 60; 
         int seconds = wholeSeconds % 60;
 
         System.out.println(hours + ":" + minutes + ":" + seconds);
