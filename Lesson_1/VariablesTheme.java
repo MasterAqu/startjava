@@ -26,22 +26,22 @@ class VariablesTheme {
         System.out.println("Тру компьютер ?: " + isGoodPc);
 
         // Задача вторая.
-        // Расчитать стоимость товара со скидкой и вывести в консоль:
+        // Рассчитать стоимость товара со скидкой и вывести в консоль:
         //  - общую стоимость товаров без скидки
         //  - сумму скидки
         //  - общую стоимость товаров со скидкой
         System.out.println("\n2. Расчёт стоимости товара со скидкой:");
 
-        int pencilCost = 100;
+        int penCost = 100;
         int bookCost = 200;
-        int sumTotal = pencilCost + bookCost;
-        int discount = (sumTotal * 11) / 100;
+        int sumTotal = penCost + bookCost;
+        int discountSum = (sumTotal * 11) / 100;
 
-        System.out.println("Стоимость ручки: " + pencilCost);
+        System.out.println("Стоимость ручки: " + penCost);
         System.out.println("Стоимость книги: " + bookCost);
         System.out.println("Общая стоимость товаров: " + sumTotal);
-        System.out.println("Сумма скидки: " + discount);
-        System.out.println("Общая стоимость товаров со скидкой: " + (sumTotal + discount));
+        System.out.println("Сумма скидки: " + discountSum);
+        System.out.println("Общая стоимость товаров со скидкой: " + (sumTotal + discountSum));
 
         // Задача третья.
         // Вывод слова JAVA без использования переменных.
@@ -145,37 +145,57 @@ class VariablesTheme {
         // - код символа берите из переменной, а не пишите его руками.
         System.out.println("\n6. Вывод символов и их кодов:");
 
-        char numberSign = 35;
-        char ampersand = 38;
-        char atSign = 64;
-        char caret = 94;
-        char underscore = 95;
+        char numberSign = '#';
+        char ampersand = '&';
+        char atSign = '@';
+        char caret = '^';
+        char underscore = '_';
 
-        System.out.println("35 = " + numberSign + "\n38 = " + ampersand +
-                "\n64 = " + atSign + "\n94 = " + caret + "\n95 = " + underscore);
+        byte thirtyFour = 34;
+        byte thirtyEight = 38;
+        byte sixtyFour = 64;
+        byte ninetyFour = 94;
+        byte ninetyFive = 95;
+
+        System.out.println(thirtyFour + " = " + numberSign);
+        System.out.println(thirtyEight + " = " + ampersand);
+        System.out.println(sixtyFour + " = " + atSign);
+        System.out.println(ninetyFour + " = " + caret);
+        System.out.println(ninetyFive + " = " + underscore);
 
         // Задача седьмая.
         // выведите в консоль Java-талисман:
         //  - каждый уникальный символ (а не его код) 
         //      - храните в отдельной переменной (кроме пробелов)
         //  - выведите результат в консоль, используя значения переменных
-        // char s1 = '\'; - Вылетает ошибка  error: unclosed character literal
         System.out.println("\n7. Вывод в консоль ASCII-арт Дюка:");
 
-        char slashToRight = 47; // = /
-        char slashToLeft = 92; // = \
-        // char underscore = 95; // = _
-        char parenthesesToRight = 40; // = (
-        char parenthesesToLeft = 41; // = )
+        // char slash = 47; // = /
+        // char backslash = 92; // = \
+        // char parenthesesToRight = 40; // = (
+        // char parenthesesToLeft = 41; // = )
 
-        System.out.println("    " + slashToRight + slashToLeft + "     " +
-                "\n   " + slashToRight + "  " + slashToLeft + "    " +
-                "\n  " + slashToRight + underscore + parenthesesToRight +
-                " " + parenthesesToLeft + slashToLeft + "   " +
-                "\n " + slashToRight + "      " + slashToLeft + "  " + 
-                "\n" + slashToRight + underscore + underscore + underscore +
-                underscore + slashToRight + slashToLeft + underscore +  underscore +
-                slashToLeft + " ");
+        char slash = '/';
+        char backslash = '\\';
+        char rightParenthesis = '(';
+        char leftParenthesis = ')';
+
+        // System.out.println("    " + slash + backslash + "     " +
+        //         "\n   " + slash + "  " + backslash + "    " +
+        //         "\n  " + slash + underscore + rightParenthesis +
+        //         " " + leftParenthesis + backslash + "   " +
+        //         "\n " + slash + "      " + backslash + "  " + 
+        //         "\n" + slash + underscore + underscore + underscore +
+        //         underscore + slash + backslash + underscore +  underscore +
+        //         backslash);
+
+        System.out.println("    " + slash + backslash + "     ");
+        System.out.println("   " + slash + "  " + backslash + "    ");
+        System.out.println("  " + slash + underscore + rightParenthesis + " " +
+                leftParenthesis + backslash + "   ");
+        System.out.println(" " + slash + "      " + backslash + "  ");
+        System.out.println("" + slash + underscore + underscore + underscore + underscore +
+                slash + backslash + underscore + underscore + backslash);
 
         // Задача восьмая.
         //  - из числа 123 выделите сотни, десятки и единицы
