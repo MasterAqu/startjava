@@ -151,17 +151,11 @@ class VariablesTheme {
         char caret = '^';
         char underscore = '_';
 
-        byte thirtyFour = 34;
-        byte thirtyEight = 38;
-        byte sixtyFour = 64;
-        byte ninetyFour = 94;
-        byte ninetyFive = 95;
-
-        System.out.println(thirtyFour + " = " + numberSign);
-        System.out.println(thirtyEight + " = " + ampersand);
-        System.out.println(sixtyFour + " = " + atSign);
-        System.out.println(ninetyFour + " = " + caret);
-        System.out.println(ninetyFive + " = " + underscore);
+        System.out.println(35 + " = " + numberSign);
+        System.out.println(38 + " = " + ampersand);
+        System.out.println(64 + " = " + atSign);
+        System.out.println(94 + " = " + caret);
+        System.out.println(95 + " = " + underscore);
 
         // Задача седьмая.
         // выведите в консоль Java-талисман:
@@ -170,30 +164,16 @@ class VariablesTheme {
         //  - выведите результат в консоль, используя значения переменных
         System.out.println("\n7. Вывод в консоль ASCII-арт Дюка:");
 
-        // char slash = 47; // = /
-        // char backslash = 92; // = \
-        // char parenthesesToRight = 40; // = (
-        // char parenthesesToLeft = 41; // = )
-
         char slash = '/';
         char backslash = '\\';
         char rightParenthesis = '(';
         char leftParenthesis = ')';
 
-        // System.out.println("    " + slash + backslash + "     " +
-        //         "\n   " + slash + "  " + backslash + "    " +
-        //         "\n  " + slash + underscore + rightParenthesis +
-        //         " " + leftParenthesis + backslash + "   " +
-        //         "\n " + slash + "      " + backslash + "  " + 
-        //         "\n" + slash + underscore + underscore + underscore +
-        //         underscore + slash + backslash + underscore +  underscore +
-        //         backslash);
-
-        System.out.println("    " + slash + backslash + "     ");
-        System.out.println("   " + slash + "  " + backslash + "    ");
+        System.out.println("    " + slash + backslash);
+        System.out.println("   " + slash + "  " + backslash);
         System.out.println("  " + slash + underscore + rightParenthesis + " " +
-                leftParenthesis + backslash + "   ");
-        System.out.println(" " + slash + "      " + backslash + "  ");
+                leftParenthesis + backslash);
+        System.out.println(" " + slash + "      " + backslash);
         System.out.println("" + slash + underscore + underscore + underscore + underscore +
                 slash + backslash + underscore + underscore + backslash);
 
