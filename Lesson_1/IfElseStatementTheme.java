@@ -52,14 +52,39 @@ class IfElseStatementTheme {
         int num1 = 33;
         int num2 = 20;
 
-        System.out.println("First (max)number is: " + num1);
-        System.out.println("Second (min)number is: " + num2);
+        System.out.println("First number is: " + num1);
+        System.out.println("Second number is: " + num2);
         if(num1 > num2) {
-            System.out.println("First number greater than second number.");
+            System.out.printf("First number: %s is greater, than a second number: %s.", num1, num2);
         } else if (num1 < num2) {
-            System.out.println("First number lesser than second number.");
+            System.out.printf("First number: %s is lesser, than a second number: %s.", num1, num2);
         } else {
             System.out.println("Numbers are equal.");
+        }
+
+        // Задача Третья.
+        // Создайте переменную с любым числом
+        // Определите, являться ли оно:
+        //      нулем
+        //      четным (нечетным)
+        //      отрицательным (положительным)
+        // Если число равно 0, то остальные проверки не должны выполняться
+        // Если число не равно 0, то не нужно выводить эту информацию
+        // Отобразите полученные результаты, включая исходное число
+        System.out.println("\n\n3. Проверка числа.");
+
+        num1 = 2;
+        System.out.println("Chosen number: " + num1);
+        if(num1 == 0) {
+            System.out.println("Number equals 0");
+        } else if(num1 % 2 == 0 & num1 > 0) {
+            System.out.println("Even number.\nNumber is positive.");
+        } else if(num1 % 2 != 0 & num1 > 0) {
+            System.out.println("Odd number.\nNumber is positive.");
+        } else if(num1 % 2 == 0 & num1 < 0) {
+            System.out.println("Even number.\nNumber is negative.");
+        } else if(num1 % 2 != 0 & num1 < 0) {
+            System.out.println("Odd number.\nNumber is negative.");
         }
     }
 }
