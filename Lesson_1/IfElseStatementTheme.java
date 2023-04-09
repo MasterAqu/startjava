@@ -86,5 +86,32 @@ class IfElseStatementTheme {
         } else if(num1 % 2 != 0 & num1 < 0) {
             System.out.println("Odd number.\nNumber is negative.");
         }
+
+        // Задача Четвёртая.
+        // Создайте две переменные, присвоив им два трехзначных целых числа
+        // Найдите в них все одинаковые цифры, стоящие в одном и том же разряде
+        // Отобразите на консоль:
+        // -    исходные числа
+        // -    одинаковые в них цифры
+        // -    номера разрядов
+        System.out.println("\n4. Поиск одинаковых цифр в числах.");
+
+        num1 = 123;
+        num2 = 223;
+
+        System.out.println("Origin number 1: " + num1);
+        System.out.println("Origin number 2: " + num2);
+        if(num1 % 10 == num2 % 10) {
+            System.out.println("Ones are the same.");
+            System.out.println("Similar digits is: " + num1 % 10);
+        if(((num1 % 100) / 10) == ((num2 % 100) / 10)) {
+            System.out.println("Tens are the same.");
+            System.out.println("Similar digits is: " + (num2 % 100) / 10);
+        if(num1 / 100 == num2 / 100) {
+            System.out.println("Hundreds are the same.");
+            System.out.println("Similar digits is: " + num1 / 100);
+            }
+        }
+        }
     }
 }
