@@ -128,130 +128,13 @@ class IfElseStatementTheme {
         char symbol;
         symbol = '\u0057';
 
-        if(symbol == 'a') { // Check for lower letters
-                System.out.println("ASCII was a " + symbol + ": lower letter.");
-        } else if(symbol == 'b') {
-                System.out.println("ASCII was a " + symbol + ": lower letter.");
-        } else if(symbol == 'c') {
-                System.out.println("ASCII was a " + symbol + ": lower letter.");
-        } else if(symbol == 'd') {
-                System.out.println("ASCII was a " + symbol + ": lower letter.");
-        } else if(symbol == 'e') {
-                System.out.println("ASCII was a " + symbol + ": lower letter.");
-        } else if(symbol == 'f') {
-                System.out.println("ASCII was a " + symbol + ": lower letter.");
-        } else if(symbol == 'g') {
-                System.out.println("ASCII was a " + symbol + ": lower letter.");
-        } else if(symbol == 'h') {
-                System.out.println("ASCII was a " + symbol + ": lower letter.");
-        } else if(symbol == 'i') {
-                System.out.println("ASCII was a " + symbol + ": lower letter.");
-        } else if(symbol == 'j') {
-                System.out.println("ASCII was a " + symbol + ": lower letter.");
-        } else if(symbol == 'k') {
-                System.out.println("ASCII was a " + symbol + ": lower letter.");
-        } else if(symbol == 'l') {
-                System.out.println("ASCII was a " + symbol + ": lower letter.");
-        } else if(symbol == 'm') {
-                System.out.println("ASCII was a " + symbol + ": lower letter.");
-        } else if(symbol == 'n') {
-                System.out.println("ASCII was a " + symbol + ": lower letter.");
-        } else if(symbol == 'o') {
-                System.out.println("ASCII was a " + symbol + ": lower letter.");
-        } else if(symbol == 'p') {
-                System.out.println("ASCII was a " + symbol + ": lower letter.");
-        } else if(symbol == 'q') {
-                System.out.println("ASCII was a " + symbol + ": lower letter.");
-        } else if(symbol == 'r') {
-                System.out.println("ASCII was a " + symbol + ": lower letter.");
-        } else if(symbol == 's') {
-                System.out.println("ASCII was a " + symbol + ": lower letter.");
-        } else if(symbol == 't') {
-                System.out.println("ASCII was a " + symbol + ": lower letter.");
-        } else if(symbol == 'u') {
-                System.out.println("ASCII was a " + symbol + ": lower letter.");
-        } else if(symbol == 'v') {
-                System.out.println("ASCII was a " + symbol + ": lower letter.");
-        } else if(symbol == 'w') {
-                System.out.println("ASCII was a " + symbol + ": lower letter.");
-        } else if(symbol == 'x') {
-                System.out.println("ASCII was a " + symbol + ": lower letter.");
-        } else if(symbol == 'y') {
-                System.out.println("ASCII was a " + symbol + ": lower letter.");
-        } else if(symbol == 'z') {
-                System.out.println("ASCII was a " + symbol + ": capital letter.");
-        } else if(symbol == 'A') { // Check for capital letters
-                System.out.println("ASCII was a " + symbol + ": capital letter.");
-        } else if(symbol == 'B') {
-                System.out.println("ASCII was a " + symbol + ": capital letter.");
-        } else if(symbol == 'C') {
-                System.out.println("ASCII was a " + symbol + ": capital letter.");
-        } else if(symbol == 'D') {
-                System.out.println("ASCII was a " + symbol + ": capital letter.");
-        } else if(symbol == 'E') {
-                System.out.println("ASCII was a " + symbol + ": capital letter.");
-        } else if(symbol == 'F') {
-                System.out.println("ASCII was a " + symbol + ": capital letter.");
-        } else if(symbol == 'G') {
-                System.out.println("ASCII was a " + symbol + ": capital letter.");
-        } else if(symbol == 'H') {
-                System.out.println("ASCII was a " + symbol + ": capital letter.");
-        } else if(symbol == 'I') {
-                System.out.println("ASCII was a " + symbol + ": capital letter.");
-        } else if(symbol == 'J') {
-                System.out.println("ASCII was a " + symbol + ": capital letter.");
-        } else if(symbol == 'K') {
-                System.out.println("ASCII was a " + symbol + ": capital letter.");
-        } else if(symbol == 'L') {
-                System.out.println("ASCII was a " + symbol + ": capital letter.");
-        } else if(symbol == 'M') {
-                System.out.println("ASCII was a " + symbol + ": capital letter.");
-        } else if(symbol == 'N') {
-                System.out.println("ASCII was a " + symbol + ": capital letter.");
-        } else if(symbol == 'O') {
-                System.out.println("ASCII was a " + symbol + ": capital letter.");
-        } else if(symbol == 'P') {
-                System.out.println("ASCII was a " + symbol + ": capital letter.");
-        } else if(symbol == 'Q') {
-                System.out.println("ASCII was a " + symbol + ": capital letter.");
-        } else if(symbol == 'R') {
-                System.out.println("ASCII was a " + symbol + ": capital letter.");
-        } else if(symbol == 'S') {
-                System.out.println("ASCII was a " + symbol + ": capital letter.");
-        } else if(symbol == 'T') {
-                System.out.println("ASCII was a " + symbol + ": capital letter.");
-        } else if(symbol == 'U') {
-                System.out.println("ASCII was a " + symbol + ": capital letter.");
-        } else if(symbol == 'V') {
-                System.out.println("ASCII was a " + symbol + ": capital letter.");
-        } else if(symbol == 'W') {
-                System.out.println("ASCII was a " + symbol + ": capital letter.");
-        } else if(symbol == 'X') {
-                System.out.println("ASCII was a " + symbol + ": capital letter.");
-        } else if(symbol == 'Y') {
-                System.out.println("ASCII was a " + symbol + ": capital letter.");
-        } else if(symbol == 'Z') {
-                System.out.println("ASCII was a " + symbol + ": capital letter.");
-        } else if(symbol == '0') { // Check if it's a number
-            System.out.println("ASCII was a " + symbol + ": a number.");
-        } else if(symbol == '1') {
-            System.out.println("ASCII was a " + symbol + ": a number.");
-        } else if(symbol == '2') {
-            System.out.println("ASCII was a " + symbol + ": a number.");
-        } else if(symbol == '3') {
-            System.out.println("ASCII was a " + symbol + ": a number.");
-        } else if(symbol == '4') {
-            System.out.println("ASCII was a " + symbol + ": a number.");
-        } else if(symbol == '5') {
-            System.out.println("ASCII was a " + symbol + ": a number.");
-        } else if(symbol == '6') {
-            System.out.println("ASCII was a " + symbol + ": a number.");
-        } else if(symbol == '7') {
-            System.out.println("ASCII was a " + symbol + ": a number.");
-        } else if(symbol == '8') {
-            System.out.println("ASCII was a " + symbol + ": a number.");
-        } else if(symbol == '9') {
-            System.out.println("ASCII was a " + symbol + ": a number.");
+        System.out.println(symbol + ": symbol itself.");
+        if(97 <= symbol & symbol <= 122) {
+            System.out.println(symbol + ": is a lower letter.");
+        } else if(65 <= symbol & symbol <= 90) {
+            System.out.println(symbol + ": is a capital letter.");
+        } else if(0 <= symbol & symbol <= 9) {
+            System.out.println(symbol + ": is a number.");
         } else {
             System.out.println("Nor a letters, nor a numbers, nothing.");
         }
@@ -267,6 +150,11 @@ class IfElseStatementTheme {
         //      - начисленный % (не путайте с процентной ставкой)
         //      - итоговую сумму с %
         System.out.println("\n6. Подсчет суммы вклада и начисленных банком %");
+
+        int deposit = 300000;
+        int incomePercentage;
+        int finalSum;
+
 
 
         }
