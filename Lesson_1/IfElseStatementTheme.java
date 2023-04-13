@@ -103,14 +103,14 @@ class IfElseStatementTheme {
         System.out.println("Origin number 2: " + num2);
         if(num1 % 10 == num2 % 10) {
                 System.out.println("Ones are the same.");
-                System.out.println("Similar digit is: " + num1 % 10);
+                System.out.println("Similar ones are: " + num1 % 10);
         if(((num1 % 100) / 10) == ((num2 % 100) / 10)) {
                 System.out.println("Tens are the same.");
         }
-                System.out.println("Similar digit is: " + (num2 % 100) / 10);
+                System.out.println("Similar tens are: " + (num2 % 100) / 10);
         if(num1 / 100 == num2 / 100) {
                 System.out.println("Hundreds are the same.");
-                System.out.println("Similar digit is: " + num1 / 100);
+                System.out.println("Similar Hundreds are: " + num1 / 100);
         }
 
         // Задача Пятая.
@@ -130,13 +130,13 @@ class IfElseStatementTheme {
 
         System.out.println(symbol + ": symbol itself.");
         if(97 <= symbol & symbol <= 122) {
-            System.out.println(symbol + ": is a lower letter.");
+                System.out.println(symbol + ": is a lower letter.");
         } else if(65 <= symbol & symbol <= 90) {
-            System.out.println(symbol + ": is a capital letter.");
+                System.out.println(symbol + ": is a capital letter.");
         } else if(0 <= symbol & symbol <= 9) {
-            System.out.println(symbol + ": is a number.");
+                System.out.println(symbol + ": is a number.");
         } else {
-            System.out.println("Nor a letters, nor a numbers, nothing.");
+                System.out.println("Nor a letters, nor a numbers, nothing.");
         }
 
         // Задача шестая.
@@ -149,13 +149,42 @@ class IfElseStatementTheme {
         //      - сумму вклада
         //      - начисленный % (не путайте с процентной ставкой)
         //      - итоговую сумму с %
-        System.out.println("\n6. Подсчет суммы вклада и начисленных банком %");
+        System.out.println("\n6. Подсчет суммы вклада и начисленных банком %.");
 
         int deposit = 300000;
-        int incomePercentage;
-        int finalSum;
+        int percentageSum;
 
+        System.out.println("Initial deposit: " + deposit);
+        if(deposit <= 100000) {
+                System.out.println("Accrued interest is 5%" +
+                "\nFinal sum with percentage: " + (deposit + ((deposit * 5) / 100)));
+        } else if(100000 < deposit & deposit <= 300000) {
+                System.out.println("Accrued interest is 7%" +
+                "\nFinal sum with percentage: " + (deposit + ((deposit * 7) / 100)));
+        } else if(deposit > 300000) {
+                System.out.println("Accrued interest is 10%" +
+                "\nFinal sum with percentage: " + (deposit + ((deposit * 10) / 100)));
+        }
 
+        // Задача седьмая.
+        // Студент получил итоговые % по предметам:
+        //      - история 59%
+        //      - программирование 91%
+        // Определите оценки по каждому предмету:
+        //      - <= 60% — 2
+        //      - > 60% — 3
+        //      - > 73% — 4
+        //      - > 91% — 5
+        System.out.println("\n7. Определение оценки по предметам.");
+
+        int history;
+        int programing;
+        int historyGrade;
+        int programingGrade;
+        int averageGrade;
+
+        history = 59;
+        programing = 91;
 
         }
     }
