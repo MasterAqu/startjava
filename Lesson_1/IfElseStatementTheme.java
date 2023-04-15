@@ -12,30 +12,30 @@ class IfElseStatementTheme {
         float height = 1.73f;
 
         if(age > 20) {
-                System.out.println("You're an adult");
+            System.out.println("You're an adult");
         } else {
-                System.out.println("You're a baby");
+            System.out.println("You're a baby");
         }
 
         if(height < 1.80) {
-                System.out.println("You're a small person, you know.");
+            System.out.println("You're a small person, you know.");
         } else {
-                System.out.println("You're tall person.");
+            System.out.println("You're tall person.");
         }
 
         if(!sexMale) {
-                System.out.println("You're not a male");
+            System.out.println("You're not a male");
         } else {
-                System.out.println("You definitely a male");
+            System.out.println("You definitely a male");
         }
 
         firstLetterName = "Matthew".charAt(0);
         if(firstLetterName == 'M') {
-                System.out.println("Hi Matthew! Enjoy you're meal!");
+            System.out.println("Hi Matthew! Enjoy you're meal!");
         } else if(firstLetterName == 'I') {
-                System.out.println("Ibrahim! Wake up!! You have to code!");
+            System.out.println("Ibrahim! Wake up!! You have to code!");
         } else {
-                System.out.println("Unknown user. Shutting down.");
+            System.out.println("Unknown user. Shutting down.");
         }
 
         // Задача Вторая.
@@ -55,11 +55,11 @@ class IfElseStatementTheme {
         System.out.println("First number is: " + num1);
         System.out.println("Second number is: " + num2);
         if(num1 > num2) {
-                System.out.printf("First number: %s is greater, than a second number: %s.", num1, num2);
+            System.out.printf("First number: %s is greater, than a second number: %s.", num1, num2);
         } else if (num1 < num2) {
-                System.out.printf("First number: %s is lesser, than a second number: %s.", num1, num2);
+            System.out.printf("First number: %s is lesser, than a second number: %s.", num1, num2);
         } else {
-                System.out.println("Numbers are equal.");
+            System.out.println("Numbers are equal.");
         }
 
         // Задача Третья.
@@ -76,15 +76,15 @@ class IfElseStatementTheme {
         num1 = 2;
         System.out.println("Chosen number: " + num1);
         if(num1 == 0) {
-                System.out.println("Number equals 0");
+            System.out.println("Number equals 0");
         } else if(num1 % 2 == 0 & num1 > 0) {
-                System.out.println("Even number.\nNumber is positive.");
+            System.out.println("Even number.\nNumber is positive.");
         } else if(num1 % 2 != 0 & num1 > 0) {
-                System.out.println("Odd number.\nNumber is positive.");
+            System.out.println("Odd number.\nNumber is positive.");
         } else if(num1 % 2 == 0 & num1 < 0) {
-                System.out.println("Even number.\nNumber is negative.");
+            System.out.println("Even number.\nNumber is negative.");
         } else if(num1 % 2 != 0 & num1 < 0) {
-                System.out.println("Odd number.\nNumber is negative.");
+            System.out.println("Odd number.\nNumber is negative.");
         }
 
         // Задача Четвёртая.
@@ -102,15 +102,15 @@ class IfElseStatementTheme {
         System.out.println("Origin number 1: " + num1);
         System.out.println("Origin number 2: " + num2);
         if(num1 % 10 == num2 % 10) {
-                System.out.println("Ones are the same.");
-                System.out.println("Similar ones are: " + num1 % 10);
+            System.out.println("Ones are the same.");
+            System.out.println("Similar ones are: " + num1 % 10);
         if(((num1 % 100) / 10) == ((num2 % 100) / 10)) {
-                System.out.println("Tens are the same.");
+            System.out.println("Tens are the same.");
         }
-                System.out.println("Similar tens are: " + (num2 % 100) / 10);
+            System.out.println("Similar tens are: " + (num2 % 100) / 10);
         if(num1 / 100 == num2 / 100) {
-                System.out.println("Hundreds are the same.");
-                System.out.println("Similar Hundreds are: " + num1 / 100);
+            System.out.println("Hundreds are the same.");
+            System.out.println("Similar Hundreds are: " + num1 / 100);
         }
 
         // Задача Пятая.
@@ -130,13 +130,13 @@ class IfElseStatementTheme {
 
         System.out.println(symbol + ": symbol itself.");
         if(97 <= symbol & symbol <= 122) {
-                System.out.println(symbol + ": is a lower letter.");
+            System.out.println(symbol + ": is a lower letter.");
         } else if(65 <= symbol & symbol <= 90) {
-                System.out.println(symbol + ": is a capital letter.");
+            System.out.println(symbol + ": is a capital letter.");
         } else if(0 <= symbol & symbol <= 9) {
-                System.out.println(symbol + ": is a number.");
+            System.out.println(symbol + ": is a number.");
         } else {
-                System.out.println("Nor a letters, nor a numbers, nothing.");
+            System.out.println("Nor a letters, nor a numbers, nothing.");
         }
 
         // Задача шестая.
@@ -156,14 +156,14 @@ class IfElseStatementTheme {
 
         System.out.println("Initial deposit: " + deposit);
         if(deposit <= 100000) {
-                System.out.println("Accrued interest is 5%" +
-                "\nFinal sum with percentage: " + (deposit + ((deposit * 5) / 100)));
+            System.out.println("Accrued interest is 5%" +
+                    "\nFinal sum with percentage: " + (deposit + ((deposit * 5) / 100)));
         } else if(100000 < deposit & deposit <= 300000) {
-                System.out.println("Accrued interest is 7%" +
-                "\nFinal sum with percentage: " + (deposit + ((deposit * 7) / 100)));
+            System.out.println("Accrued interest is 7%" +
+                    "\nFinal sum with percentage: " + (deposit + ((deposit * 7) / 100)));
         } else if(deposit > 300000) {
-                System.out.println("Accrued interest is 10%" +
-                "\nFinal sum with percentage: " + (deposit + ((deposit * 10) / 100)));
+            System.out.println("Accrued interest is 10%" +
+                    "\nFinal sum with percentage: " + (deposit + ((deposit * 10) / 100)));
         }
 
         // Задача седьмая.
@@ -181,10 +181,44 @@ class IfElseStatementTheme {
         int programing;
         int historyGrade;
         int programingGrade;
-        int averageGrade;
 
         history = 59;
         programing = 91;
+        historyGrade = 0;
+        programingGrade = 0;
+
+        if(history > 91) {
+            historyGrade = 5;
+            System.out.println("Grade: " + historyGrade + ", History");
+        } else if(history > 73) {
+            historyGrade = 4;
+            System.out.println("Grade: " + historyGrade + ", History");
+        } else if(history > 69) {
+            historyGrade = 3;
+                System.out.println("Grade: " + historyGrade + ", History");
+        } else if(history <= 60) {
+            historyGrade = 2;
+            System.out.println("Grade: " + historyGrade + ", History");
+        }
+        if(programing > 91) {
+            programingGrade = 5;
+            System.out.println("Grade: " + programingGrade + ", Programing");
+        } else if(programing > 73) {
+            programingGrade = 4;
+            System.out.println("Grade: " + programingGrade + ", Programing");
+        } else if(programing > 69) {
+            programingGrade = 3;
+            System.out.println("Grade: " + programingGrade + ", Programing");
+        } else if(programing <= 60) {
+            programingGrade = 2;
+            System.out.println("Grade: " + programingGrade + ", Programing");
+        }
+
+        int averageGrade = (historyGrade + programingGrade) / 2;
+        int averagePercentage = (programing + history) / 2;
+
+        System.out.println("Average grade: " + averageGrade);
+        System.out.println("Average graduate percentage: " + averagePercentage);
 
         }
     }
